@@ -12,8 +12,24 @@ def inicio():
 
         numero1 = float(request.form["numero1"])
         numero2 = float(request.form["numero2"])
+        operacao = request.form["operacao"]
 
-        resultado = numero1 + numero2
+        if operacao == "+":
+            resultado = numero1 + numero2
+
+        elif operacao == "-":
+            resultado = numero1 - numero2
+
+        elif operacao == "*":
+            resultado = numero1 * numero2
+
+        elif operacao == "/":
+
+            if numero2 != 0:
+                resultado = numero1 / numero2
+
+            else:
+                resultado = "Não é possível dividir por zero."
 
     return render_template("index.html", resultado=resultado)
 
