@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planos - Calculadora</title>
+</head>
+
+<body>
+
+    <h1>Escolha seu plano</h1>
+
+    <p>
+        Seu resultado está protegido.
+        Escolha um plano para continuar.
+    </p>
+
+
+    <section>
+
+        <h2>🟢 Plano Padrão</h2>
+
+        <h3>R$ 19,90</h3>
+
+        <ul>
+            <li>Operações básicas</li>
+            <li>Resultado básico</li>
+        </ul>
+
+        <form method="POST" action="/escolher-plano">
+    <input type="hidden" name="plano" value="padrao">
+    <button type="submit">Escolher Padrão</button>
+</form>
+
+    </section>
+
+
+    <section>
+
+        <h2>🔵 Plano Premium</h2>
+
+        <h3>R$ 49,90</h3>
+
+        <ul>
+            <li>Todas as operações</li>
+            <li>Resultados detalhados</li>
+            <li>Recursos adicionais</li>
+        </ul>
+
+        <form method="POST" action="/escolher-plano">
+    <input type="hidden" name="plano" value="premium">
+    <button type="submit">Escolher Premium</button>
+</form>
+
+    </section>
+
+
+    <section>
+
+        <h2>🟣 Plano Elite Pro</h2>
+
+        <h3>R$ 99,90</h3>
+
+        <ul>
+            <li>Todas as operações</li>
+            <li>Resultados avançados</li>
+            <li>Todos os recursos</li>
+            <li>Prioridade no processamento</li>
+        </ul>
+
+        <form method="POST" action="/escolher-plano">
+    <input type="hidden" name="plano" value="elite_pro">
+    <button type="submit">Escolher Elite Pro</button>
+</form>
+
+    </section>
+
+</body>
+
+</html>
